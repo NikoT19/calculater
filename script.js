@@ -46,3 +46,4 @@ function calculateStakes() {
     document.getElementById('maxRounds').style.display = 'block';
     document.getElementById('targetInfo').style.display = 'block';
 }
+
